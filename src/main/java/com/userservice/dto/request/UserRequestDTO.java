@@ -28,6 +28,9 @@ public class UserRequestDTO {
     @NotNull(groups = Create.class)
     private String phone;
 
+    @NotBlank
+    private String password;
+
     @NotNull(groups = Create.class)
     @ValidUserAge
     private  Integer age;

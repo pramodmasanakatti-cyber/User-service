@@ -13,6 +13,7 @@ public interface UserMapper {
     @Mapping(source = "fullName",target = "fullName")
     @Mapping(source = "email",target = "email")
     @Mapping(source = "phone",target = "phone")
+    @Mapping(source = "password",target="password")
     User toEntity(UserRequestDTO dto);
 
     @Mapping(source = "userId",target = "userId")
